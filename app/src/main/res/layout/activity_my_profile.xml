@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyProfileActivity">
+    <ImageView
+        android:id="@+id/coverImage"
+        android:src="@drawable/cover"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintDimensionRatio="5:2.5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="centerCrop"
+        />
+    <include
+        android:id="@+id/myToolBar"
+        layout="@layout/my_toolbar"
+        />
+
+
+    <androidx.cardview.widget.CardView
+
+        android:layout_marginTop="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/coverImage"
+        app:layout_constraintEnd_toEndOf="@id/coverImage"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/editCoverTv"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:paddingTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Edit Cover Photo"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"/>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/profile_image"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/profileimage"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#00000000"
+        app:layout_constraintTop_toBottomOf="@+id/coverImage"
+        app:layout_constraintBottom_toBottomOf="@+id/coverImage"
+        app:layout_constraintStart_toStartOf="@+id/coverImage"
+        app:layout_constraintEnd_toEndOf="@+id/coverImage"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/editTv"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="@id/profile_image"
+        app:layout_constraintEnd_toEndOf="@id/profile_image">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#6DE16D"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_baseline_camera_alt_24" />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <LinearLayout
+        android:id="@+id/nameLayout"
+        app:layout_constraintTop_toBottomOf="@id/profile_image"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+        <TextView
+            android:text="Debbie"
+            android:gravity="center"
+            android:textSize="26sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"/>
+        <TextView
+            android:text="Photographer"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#999"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/counterLayout"
+        app:layout_constraintTop_toBottomOf="@id/nameLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="70dp"
+        android:layout_marginTop="20dp"
+        >
+        <LinearLayout
+            android:gravity="start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:text="483"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#444" />
+            <TextView
+                android:text="POSTS"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#999"/>
+        </LinearLayout>
+        <FrameLayout
+            android:background="#999"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="20dp"/>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_gravity="center"
+                android:text="458444"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#444"/>
+            <TextView
+                android:text="FOLLOWERS"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#999"/>
+        </LinearLayout>
+        <FrameLayout
+            android:background="#999"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"/>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_gravity="center"
+                android:text="302"
+                android:gravity="center"
+                android:textSize="18sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#444"/>
+            <TextView
+                android:text="FOLLOWING"
+                android:gravity="center"
+                android:textSize="12sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#999"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/massageFollowLayout"
+
+        app:layout_constraintTop_toBottomOf="@id/counterLayout"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="70dp"
+        android:layout_marginTop="20dp">
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/follow_button"
+            android:text="Create post"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:textColor="@color/white"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:background="@drawable/massage_button"
+            android:layout_marginStart="20dp"
+
+            android:text="Edit profile"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:textColor="@color/black"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        app:layout_constraintTop_toBottomOf="@id/massageFollowLayout"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:elevation="0dp"
+            >
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#f9f9f9"
+                app:tabIndicatorColor="@color/black"
+                app:tabSelectedTextColor="#B354DC"
+                app:tabTextColor="#009688"
+
+                />
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
