@@ -6,7 +6,9 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.FragmentManager;
 import androidx.viewpager.widget.ViewPager;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 import com.google.android.material.tabs.TabLayout;
 
@@ -15,6 +17,7 @@ public class MyProfileActivity extends AppCompatActivity {
     FragmentManager fragmentManager;
     FragmentAdapter fragmentAdapter;
     TabLayout tabLayout;
+    AppCompatButton createPost;
 
 
     @Override
@@ -29,5 +32,16 @@ public class MyProfileActivity extends AppCompatActivity {
         viewPager.setAdapter(fragmentAdapter);
 
         tabLayout.setupWithViewPager(viewPager);
+        createPost = findViewById(R.id.createPost);
+        createPost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MyProfileActivity.this,EditProfileActivity.class));
+
+            }
+        });
+
+
+
     }
 }

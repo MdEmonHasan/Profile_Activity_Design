@@ -23,28 +23,28 @@
        />
 
 
-   <androidx.cardview.widget.CardView
+<!--   <androidx.cardview.widget.CardView-->
 
-       android:layout_marginTop="20dp"
-       app:layout_constraintBottom_toBottomOf="@id/coverImage"
-       app:layout_constraintEnd_toEndOf="@id/coverImage"
-       android:layout_width="wrap_content"
-       android:layout_height="40dp"
-       android:id="@+id/editCoverTv"
-       android:layout_marginBottom="10dp"
-       android:layout_marginRight="10dp">
+<!--       android:layout_marginTop="20dp"-->
+<!--       app:layout_constraintBottom_toBottomOf="@id/coverImage"-->
+<!--       app:layout_constraintEnd_toEndOf="@id/coverImage"-->
+<!--       android:layout_width="wrap_content"-->
+<!--       android:layout_height="40dp"-->
+<!--       android:id="@+id/editCoverTv"-->
+<!--       android:layout_marginBottom="10dp"-->
+<!--       android:layout_marginRight="10dp">-->
 
-      <TextView
-          android:textSize="15sp"
-          android:textColor="#000"
-          android:paddingTop="10dp"
-          android:layout_width="wrap_content"
-          android:layout_height="match_parent"
-          android:text="Edit Cover Photo"
-          android:paddingLeft="10dp"
-          android:paddingRight="5dp"/>
+<!--      <TextView-->
+<!--          android:textSize="15sp"-->
+<!--          android:textColor="#000"-->
+<!--          android:paddingTop="10dp"-->
+<!--          android:layout_width="wrap_content"-->
+<!--          android:layout_height="match_parent"-->
+<!--          android:text="Edit Cover Photo"-->
+<!--          android:paddingLeft="10dp"-->
+<!--          android:paddingRight="5dp"/>-->
 
-   </androidx.cardview.widget.CardView>
+<!--   </androidx.cardview.widget.CardView>-->
 
 
    <de.hdodenhof.circleimageview.CircleImageView
